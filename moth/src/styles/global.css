@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root {
+    --primary-color: #1a202c;
+    --azure: #f0ffff; 
+    --lavendar: #e0ccfa;
+    --lime: #d5f9c4;
+}
+
+h1 {
+    color: var(--azure)
+}

@@ -1,24 +1,29 @@
 ---
-import FlowerButton from "./FlowerButton.astro"
+import FlowerButton from "./FlowerButton.astro";
 ---
-<div id="header">
-    <a href="/">
-        <FlowerButton text={"HOME"} />
-    </a>
 
-    <a href="/about">
-        <FlowerButton text={"ABOUT"} />
-    </a>
+<div class="" id="header">
+	<a href="/">
+		<FlowerButton text={"HOME"} />
+	</a>
+
+	<a href="/moths">
+		<FlowerButton text={"MOTHS"} />
+	</a>
+
+	<a href="/about">
+		<FlowerButton text={"ABOUT"} />
+	</a>
 </div>
 
 <style>
-    #header {
-        background-color: azure;
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        justify-content: center;
-        padding: 3rem;
-        z-index: 1000;
-    }
+	#header {
+		background-color: var(--lavendar);
+		display: flex;
+		flex-direction: row;
+		gap: 3rem;
+		justify-content: center;
+		padding: 3rem;
+		z-index: 1000;
+	}
 </style>

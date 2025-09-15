@@ -75,25 +75,25 @@ const {text} = Astro.props
 button {
   position: relative;
   padding: 15px 45px;
-  background: #fec195;
+  background: var(--lime);
   font-size: 17px;
   font-weight: 500;
   color: #181818;
   cursor: pointer;
-  border: 1px solid #fec195;
+  border: 1px solid var(--lime);
   border-radius: 8px;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
 }
 
 button:hover {
-  border: 1px solid #f3b182;
+  border: 1px solid var(--azure);
   background: linear-gradient(
-    85deg,
-    #fec195,
-    #fcc196,
-    #fabd92,
-    #fac097,
-    #fac39c
+    -45deg,
+    var(--lime),
+    #b3fed9,
+    #baf5f7,
+    #c7f8fa,
+    var(--azure)
   );
   animation: wind 2s ease-in-out infinite;
 }
