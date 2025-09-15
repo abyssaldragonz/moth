@@ -1,0 +1,17 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import MothCard from '../components/MothCard.astro';
+import mothData from '../assets/mothData.json';
+---
+
+<Layout>
+	<Header />
+    <div>
+        {
+            mothData.map((moth)=>
+            (<MothCard title={moth.name} description={moth.description} image={moth.image} />)
+        )}
+    </div>
+</Layout>

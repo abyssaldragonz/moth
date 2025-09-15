@@ -1,0 +1,86 @@
+[
+    {
+        "id": 0,
+        "name": "polyphemus moth",
+        "description": "",
+        "image": "/mothImages/polyphemus.webp"
+    }, 
+    {
+        "id": 1,
+        "name": "leopard moth",
+        "description": "",
+        "image": "/mothImages/leopard.webp"
+    },
+    {
+        "id": 2,
+        "name": "white lined sphinx moth",
+        "description": "",
+        "image": "/mothImages/sphinx.webp"
+    },
+    {
+        "id": 3,
+        "name": "cecropia moth",
+        "description": "",
+        "image": "/mothImages/cecropia.webp"
+    },
+    {
+        "id": 4,
+        "name": "rosy maple moth",
+        "description": "",
+        "image": "/mothImages/rosymaple.webp"
+    },
+    {
+        "id": 5,
+        "name": "comet moth",
+        "description": "",
+        "image": "/mothImages/comet.webp"
+    },
+    {
+        "id": 6,
+        "name": "atlas moth",
+        "description": "",
+        "image": "/mothImages/atlas.webp"
+    },
+    {
+        "id": 7,
+        "name": "spanish moon moth",
+        "description": "",
+        "image": "/mothImages/spanishmoon.webp"
+    },
+    {
+        "id": 8,
+        "name": "clifden moth",
+        "description": "",
+        "image": "/mothImages/clifden.webp"
+    },
+    {
+        "id": 9,
+        "name": "isabella tiger moth",
+        "description": "",
+        "image": "/mothImages/tiger.webp"
+    },
+    {
+        "id": 10,
+        "name": "luna moth",
+        "description": "",
+        "image": "/mothImages/luna.webp"
+    },
+    {
+        "id": 11,
+        "name": "blue tiger moth",
+        "description": "",
+        "image": "/mothImages/bluetiger.webp"
+    },
+    {
+        "id": 12,
+        "name": "io moth",
+        "description": "",
+        "image": "/mothImages/io.webp"
+    },
+    {
+        "id": 13,
+        "name": "madagascar sunset moth",
+        "description": "",
+        "image": "/mothImages/sunset.webp"
+    }
+]
