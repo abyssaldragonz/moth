@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -12,13 +13,47 @@ import "../styles/global.css";
 		<title>ABYSSALMOTHZ</title>
 	</head>
 	<body>
-		<!-- <img class="pointer-events-none transform-none fixed p-5 mix-blend-hard-light" src="../../public/light.png" id="light" /> -->
+		<img
+			style="z-index: 1500"
+			class="animate-pulse animate-ping animate-bounce pointer-events-none transform-none fixed p-5 mix-blend-hard-light justify-self-center"
+			src="../../public/light.png"
+			id="light"
+			width={150}
+		/>
 		<slot />
+		<Footer />
 	</body>
 </html>
 
 <script>
-	let cursor = document.querySelector("#light");
+	document.addEventListener("DOMContentLoaded", () => {
+		let mouseCircle = document.getElementById("light"),
+			mousePosX = window.innerWidth/2,
+			mousePosY = window.innerHeight/2,
+			elementWidth = mouseCircle?.offsetWidth;
+
+		document.onmousemove = (e) => {
+			mousePosX = e.pageX;
+			mousePosY = e.pageY;
+		};
+
+		let delay = 10,
+			revisedMousePosX = 0,
+			revisedMousePosY = 0;
+
+		function delayMouseFollow() {
+			requestAnimationFrame(delayMouseFollow);
+
+			revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+			revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+
+			if (mouseCircle && elementWidth) {
+				mouseCircle.style.top = revisedMousePosY - elementWidth / 2 + "px";
+				mouseCircle.style.left = revisedMousePosX - elementWidth / 2 + "px";
+			}
+		}
+		delayMouseFollow();
+	});
 </script>
 
 <style>
