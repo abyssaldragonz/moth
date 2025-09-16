@@ -1,12 +1,20 @@
+---
+import GitHubLogo from "../assets/githubIcon.svg";
+import LinkedInLogo from "../assets/linkedinIcon.svg";
+import MailLogo from "../assets/mailIcon.svg";
+---
+
 <div class="card">
-	<h1>JOSEPHINE!</h1>
+	<h1 class="text-5xl font-bold">JOSEPHINE!</h1>
+	<GitHubLogo width={50} />
+	<LinkedInLogo width={50} />
+	<MailLogo width={50} />
 </div>
 
 <style>
 	.card {
-		background-color: azure;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 2rem;
 	}
 
