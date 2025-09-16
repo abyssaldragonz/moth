@@ -3,10 +3,11 @@
 :root {
     --primary-color: #1a202c;
     --azure: #f0ffff; 
+    --purple: #aa74f2;
     --lavendar: #e0ccfa;
     --lime: #d5f9c4;
 }
 
-h1 {
+h1, h2, h3 {
     color: var(--azure)
 }

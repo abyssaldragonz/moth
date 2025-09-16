@@ -4,11 +4,13 @@ import LinkedInLogo from "../assets/linkedinIcon.svg";
 import MailLogo from "../assets/mailIcon.svg";
 ---
 
-<div class="card">
+<div class="flex flex-col gap-5 justify-center items-center border-2 border-gray-200 border-opacity-60 rounded-lg w-auto h-auto">
 	<h1 class="text-5xl font-bold">JOSEPHINE!</h1>
-	<GitHubLogo width={50} />
-	<LinkedInLogo width={50} />
-	<MailLogo width={50} />
+	<div class="flex flex-row gap-5 justify-center h-5">
+		<GitHubLogo width={50} height={50} />
+		<LinkedInLogo width={50} height={50} />
+		<MailLogo width={50} height={50} />
+	</div>
 </div>
 
 <style>
